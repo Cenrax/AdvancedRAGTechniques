@@ -64,6 +64,28 @@ python rag-system.py
 - Start by running the `chunking.py` script to prepare the data.
 - Then, use the `rag-system.py` script to perform queries and retrieve augmented results.
 
+
+### Chunk Visualizer
+
+It is a web-based application that allows you to visualize and analyze data stored in a Qdrant vector database. This tool is particularly useful for exploring embeddings, chunks, and associated metadata in your Qdrant collection.
+#### Features
+
+1. **Raw Data Display**: View the raw data fetched from your Qdrant collection, including vectors, chunks, and margins.
+
+2. **Data Overview**: Displays a DataFrame with chunks and margins for a quick summary of your data.
+
+3. **Embedding Visualization**: Creates a 2D scatter plot of your embeddings using t-SNE dimensionality reduction, allowing you to visualize the relationships between your vectors.
+
+4. **Chunk and Margin Analysis**: 
+   - Histogram of chunk lengths
+   - Histogram of margin values
+
+5. **Search Functionality**: Allows you to search for specific terms within the chunks.
+
+6. **Vector Statistics**: Provides basic statistics about the vector lengths and their distribution.
+
+7. **Similarity Search**: Performs a random similarity search to demonstrate how similar chunks can be found in your collection.
+
 ## Additional Information
 
 - Make sure the Qdrant service is running before executing any scripts.
