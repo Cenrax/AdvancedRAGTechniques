@@ -15,13 +15,6 @@ The Reflection-Tuned Code Analyzer is an advanced AI-driven tool that leverages 
 
 4. **Flexible Application**: While designed for code analysis, this reflection prompting technique can be adapted for various complex tasks requiring deep analysis and self-reflection in AI systems.
 
-## Installation
-
-```bash
-git clone https://github.com/yourusername/reflection-tuned-code-analyzer.git
-cd reflection-tuned-code-analyzer
-pip install -r requirements.txt
-```
 
 ## Logical Flow Diagram
 ```mermaid
