@@ -5,7 +5,7 @@
 NexusFlow is an intelligent assistant designed to help users create AI pipelines using natural language descriptions. It leverages the power of large language models (LLMs) to interpret user requirements, plan tasks, and generate a complete workflow for AI-driven data processing and analysis.
 
 ## Architecture Diagram
-```
+```mermaid
 graph TD
     A[User] -->|Input| B[Streamlit Interface]
     B -->|User Query| C[NexusFlow]
