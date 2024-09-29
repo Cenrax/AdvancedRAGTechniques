@@ -20,6 +20,41 @@ AgentPro is an intelligent Python code generator and execution system that lever
 - Handle errors and retry code generation
 - Logging for debugging and monitoring
 
+## Architecture Diagram
+
+```mermaid
+graph TD
+    A[User] -->|Provides Prompt| B[AgentPro]
+    B -->|Sends API Request| C[OpenAI API]
+    C -->|Returns Generated Code| B
+    B -->|Analyzes Code| D[Library Detector]
+    D -->|Identifies Required Libraries| E[Library Installer]
+    E -->|Installs Libraries| F[Python Environment]
+    B -->|Executes Code| G[Code Executor]
+    G -->|Runs in| F
+    G -->|Captures Output/Errors| B
+    B -->|Displays Results| A
+    H[.env File] -->|Provides API Key| B
+    
+    subgraph AgentPro System
+    B
+    D
+    E
+    G
+    end
+    
+    subgraph External Services
+    C
+    F
+    end
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#bfb,stroke:#333,stroke-width:2px
+    style F fill:#bfb,stroke:#333,stroke-width:2px
+    style H fill:#ff9,stroke:#333,stroke-width:2px
+```
+
 ## Requirements
 
 - Python 3.6+
