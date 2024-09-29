@@ -62,13 +62,7 @@ graph TD
 
 ## Installation
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/agentpro.git
-   cd agentpro
-   ```
-
-2. Create a virtual environment:
+1. Create a virtual environment:
    ```
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
